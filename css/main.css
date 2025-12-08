@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #241C16;
+    --secondary-color: #D46211;
+    --secondary-hover-color: #d46211d8;
+    --accent-color: #AD896F;
+}
+body{
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #F8F7F6;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 95%;
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .container{
+        width: 90%;
+    }
+    
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    nav ul{
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+}
+nav ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+   color: var(--secondary-color);
+}
+
+nav ul li a.btn{
+    padding: 0.9rem 1.2rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+nav ul li a.btn:hover{
+    background-color: var(--secondary-hover-color);
+}
+/* end header */
+
+/* footer */
+
+footer{
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #E0E0E0;
+    margin-top: 4rem;
+    color: var(--accent-color);
+}
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+footer .footer-links a{
+    color: var(--accent-color);
+}
+@media screen and (min-width:768px){
+    footer .footer-links li:nth-child(2) a{
+        margin-left:-30px ;
+    }
+}
+
+footer .footer-social-media{
+     justify-content:center;
+     gap: 1.5rem;
+     margin: 2rem 0;
+     font-size: 25px;
+}
+/* end footer */
