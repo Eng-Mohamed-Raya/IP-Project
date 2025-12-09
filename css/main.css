@@ -73,13 +73,15 @@ nav ul li a:hover{
    color: var(--secondary-color);
 }
 
-nav ul li a.btn{
+.btn{
     padding: 0.9rem 1.2rem;
     background-color: var(--secondary-color);
     color: #fff;
     border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
-nav ul li a.btn:hover{
+.btn:hover{
     background-color: var(--secondary-hover-color);
 }
 /* end header */
