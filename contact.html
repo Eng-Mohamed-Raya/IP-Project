@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop</title>
     <!-- fonts -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- styles -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
     <!-- header -->
     <script src="./js/header.js"></script>
 
     <!-- contact -->
-        <div class="container contact-section">
-            <div class="contact-title">
-                <h2>go in touch</h2>
-                <p>We would love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to us through any of the following methods:</p>
+    <div class="container contact-section">
+      <div class="contact-title">
+        <h2>go in touch</h2>
+        <p>
+          We would love to hear from you! Whether you have questions, feedback,
+          or just want to say hello, feel free to reach out to us through any of
+          the following methods:
+        </p>
+      </div>
+      <div class="contact-methods">
+        <form action="">
+          <p>send us a message</p>
+          <label for="name">name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+          <label for="email">email</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+          <label for="message">message</label>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="other-methods">
+          <div class="contact-info">
+            <div class="row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>address</h4>
+                <p>123 Coffee St, Caffeine City, CA 12345</p>
+              </div>
             </div>
-            <div class="contact-methods">
-                <form action="">
-                    <p>send us a message</p>
-                    <label for="name">name</label>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <label for="email">email</label>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <label for="message">message</label>
-                    <textarea id="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="other-methods">
-                    <div class="contact-info">
-
-                        <div class="row">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <h4>address</h4>
-                                <p>123 Coffee St, Caffeine City, CA 12345</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>phone</h4>
-                                <p>+1 234 567 890</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>email</h4>
-                                <p>coffee@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="hours-map-img">
-                        <h3>our hours</h3>
-                        <div class="hours">
-                            <div class="hour-row">
-                                <p>monday - friday</p>
-                                <p>7:00 am - 7:00 pm</p>
-                            </div>
-                            <div class="hour-row">
-                                <p>saturday</p>
-                                <p>8:00 am - 6:00 pm</p>
-                            </div>
-                            <div class="hour-row">
-                                <p>sunday</p>
-                                <p>8:00 am - 4:00 pm</p>
-                            </div>
-
-                        </div>
-                        <div class="img-map">
-                            <img src="./img/map.png" alt="img-map">
-                        </div>
-                    </div>
-                </div>
-
+            <div class="row">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>phone</h4>
+                <p>+1 234 567 890</p>
+              </div>
             </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>email</h4>
+                <p>coffee@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="hours-map-img">
+            <h3>our hours</h3>
+            <div class="hours">
+              <div class="hour-row">
+                <p>monday - friday</p>
+                <p>7:00 am - 7:00 pm</p>
+              </div>
+              <div class="hour-row">
+                <p>saturday</p>
+                <p>8:00 am - 6:00 pm</p>
+              </div>
+              <div class="hour-row">
+                <p>sunday</p>
+                <p>8:00 am - 4:00 pm</p>
+              </div>
+            </div>
+            <div class="img-map">
+              <img src="./img/map.png" alt="img-map" />
+            </div>
+          </div>
         </div>
-
+      </div>
+    </div>
 
     <!-- footer -->
     <script src="./js/footer.js"></script>
-</body>
+  </body>
 </html>
