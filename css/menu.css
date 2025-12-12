@@ -1,0 +1,121 @@
+
+/* start selection style */
+.selection-content {
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+}
+/* end selection style */
+
+/* start selection links */
+.selection-content .select a {
+  padding: 10px;
+  background-color: hsl(25deg 33.33% 92.94%);
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: all ease 0.5s;
+}
+.selection-content .select a:hover {
+  background-color: var(--secondary-hover-color);
+  color: #fff;
+}
+/* end selection links */
+
+/* start selection content  */
+.selection-content .select-kind {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+/* dimensionals */
+.select-kind .select-width {
+  width: 28%;
+  perspective: 80px;
+}
+.select-width img {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.select-width img:hover {
+  transform: translateZ(7px);
+  box-shadow: 0 5px 8px rgba(0, 0,0,.2),
+  0 -5px 8px rgba(0, 0,0,.2);
+}
+
+.select-width span {
+  text-transform: capitalize;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+.select-width p {
+  color: hsl(24.16deg 33.33% 45.29%);
+  margin-bottom: 19px;
+}
+/* end selection content  */
+.selection-content h1 {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* media query */
+
+@media screen and (max-width:460px)  {
+  .selection-content .select{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .select-kind{
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+    /* background-color: aqua; */
+  }
+  .select-kind .select-width{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 10px 15px #b46329;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+    position: relative;
+    
+  }
+  .select-kind .select-width::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #4b2810;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 1s ease;
+  }
+  .select-kind .select-width:hover::after{
+    width: 100%;
+  }
+  .select-kind .select-width img{
+    width: 100%;
+    transform: translateZ(0px);
+  }
+  .select-kind .select-width p{
+    color: #fff;
+  }
+}

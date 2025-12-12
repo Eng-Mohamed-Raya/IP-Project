@@ -1,0 +1,32 @@
+[
+        {
+            "name": "Classic Latte",
+            "price": "4.50",
+            "imgSrc":"menuImg1.png"
+        },
+        {
+            "name": "Iced Americano",
+            "price": "4.00",
+            "imgSrc":"menuImg2.png"
+        },
+        {
+            "name": "Cappuccino",
+            "price": "4.50",
+            "imgSrc":"menuImg3.png"
+        },
+        {
+            "name": "Espresso",
+            "price": "3.00",
+            "imgSrc":"menuImg4.png"
+        },
+        {
+            "name": "Cold Brew",
+            "price": "5.00",
+            "imgSrc":"menuImg5.png"
+        },
+        {
+            "name": "Mocha",
+            "price": "5.25",
+            "imgSrc":"menuImg6.png"
+        }
+]
